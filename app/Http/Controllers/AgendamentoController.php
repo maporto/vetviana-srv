@@ -43,8 +43,8 @@ class AgendamentoController extends Controller
 
         Mail::send('emails.solicitar-agendamento', ['agendamento' => $agendamento], function ($message) use ($assunto)
         {
-            $message->from('racoesviana.noreply@gmail.com', 'Rações Viana');
-            $message->to('diegovet@racoesviana.com.br');
+            $message->from(env('MAIL_USERNAME'), 'Rações Viana');
+            $message->to(env('EMAIL_MASTER'));
             $message->subject($assunto);
         });
 
