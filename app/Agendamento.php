@@ -19,7 +19,7 @@ class Agendamento extends Model
      * @var array
      */
     protected $fillable = [
-        'datahora', 'horario', 'status', 'pessoafisica_id', 'servico_id',
+        'datahora', 'status', 'pessoafisica_id', 'servico_id',
     ];
 
     /**

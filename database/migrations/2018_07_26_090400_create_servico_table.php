@@ -17,6 +17,7 @@ class CreateServicoTable extends Migration
             $table->increments('id');
             $table->string('descricao', 100);
             $table->double('valor', 12, 2); 
+            $table->string('icone');
             $table->timestamps();
         });
     }

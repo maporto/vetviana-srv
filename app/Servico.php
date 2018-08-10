@@ -14,7 +14,8 @@ class Servico extends Model
 	 */
 	protected $fillable = [
 		'descricao',
-		'valor'
+		'valor',
+		'icone',
 	];
 
 	/**

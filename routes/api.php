@@ -17,7 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::middleware('auth:api')->group(function () {
-	Route::get('meus-agendamento', 'AgendamentoController@meusAgendamentos');
+	Route::get('meus-agendamentos', 'AgendamentoController@meusAgendamentos');
 	Route::get('agendamento', 'AgendamentoController@getList');
 	Route::post('agendamento', 'AgendamentoController@agendar');
 	Route::get('servico', 'ServicoController@getList');

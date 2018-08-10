@@ -17,11 +17,13 @@ class ServicoTableSeeder extends Seeder
 		// And now, let's create a few articles in our database:
 		Servico::create([
 			'descricao' => 'Banho & Tosa',
-			'valor' => rand(0, 99999)
-		]);
+			'valor' => rand(0, 99999),
+			'icone' => 'cut'
+			]);
 		Servico::create([
 			'descricao' => 'Consulta',
-			'valor' => rand(0, 99999)
+			'valor' => rand(0, 99999),
+			'icone' => 'medkit'
 		]);
     }
 }
